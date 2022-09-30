@@ -7,33 +7,45 @@
     <link href="/css/output/output.css" rel="stylesheet">
     <title>O Fernando Saraiva</title>
 </head>
-<body class="font-sans">
-    <header class="navbar flex flex-row items-center space-x-96 min-w-full min-h-max sm:w-full bg-zinc-600 p-5">
-        <div class="mx-8 flex flex-row items-center grow space-x-96 sm:space-x-0 sm:grow">
+<body class="font-sans overflow-hidden overflow-y-scroll">
+    <!-- Header -->
+    <header class="navbar  border-amber-100 border-b-2 flex flex-row items-center justify-center space-x-96 max-w-full min-h-max sm:w-full bg-zinc-600 bg-gradient-to-tl from-zinc-500 p-5 ">
+        <div class="container max-w-6xl mx-10 flex flex-row items-center grow sm:grow">
             <img src="img/logo.png" alt="Fernando Saraiva">
-            <nav class="flex flex-row sm:none flex-wrap gap-4 grow justify-end items-center text-base font-semibold uppercase text-amber-200">
-                <h1 class="hover:text-amber-400 transition-transform duration-100 delay-100"><a href="#about">Sobre</a></h1>
-                <h1 class="hover:text-amber-400 transition-transform duration-100 delay-100"><a href="#content">Conteudos e Projetos</a></h1>
-                <h1 class="hover:text-amber-400 transition-transform duration-100 delay-100"><a href="#contact">Contato</a></h1>
+            <nav class="flex flex-row sm:none flex-wrap gap-4 grow justify-end items-center text-base font-semibold uppercase text-amber-100">
+                <h1 class="hover:text-amber-200 transition-transform duration-100 delay-100"><a href="#about">Sobre</a></h1>
+                <h1 class="hover:text-amber-200 transition-transform duration-100 delay-100"><a href="#content">Conteudos e Projetos</a></h1>
+                <h1 class="hover:text-amber-200 transition-transform duration-100 delay-100"><a href="#contact">Contato</a></h1>
             </nav>
         </div>
     </header>
-    <div class="show flex flex-col items-center justify-center min-w-full h-96 bg-zinc-600 p-5 text-amber-100" >
-        <img class="drop-shadow hover:scale-125 transition-transform duration-100 delay-100"  src="img/emoti.png" alt="emoji">
-        <h1 class="mt-3 font-bold text-6xl text-amber-200">Olá, eu sou o Fernando</h1>
-        <p class="font-light text-2xl text-amber-200">Criando um mundo mais bonito através da Tecnologia</p>
-        <div class="mt-3 w-96 h-6 bg-amber-200 rounded-lg rounded-tr-none">
-            <h1></h1>
+    <!-- Final Header -->
+
+    <!-- Slider -->
+    <div class="show flex flex-col items-center justify-center max-w-full h-96 bg-zinc-600 bg-gradient-to-tl from-zinc-500 p-5 text-amber-100" >
+        <div class="container max-w-6xl">
+            <div class="container flex">
+                <h1 class="mt-3 font-bold text-6xl text-amber-100">Hi, i'am Fernando</h1>
+            </div>
+            <p class="font-light text-2xl text-amber-100">Maker and Problem Solver</p>
+            <div class="mt-3 w-48 h-8 bg-amber-100 rounded-lg rounded-tr-none">
+                <h1></h1>
+            </div>
         </div>
     </div>
-    <div class="about flex flex-col justify-center min-w-full p-5 m-3" id="about">
-        <h1 class="font-medium text-zinc-600 text-center text-2xl">Sobre mim</h1>
-        <h2 class="font-bold mt-2 text-5xl text-zinc-800 text-center">Olá mundo!</h2>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dicta ea 
-            assumenda maiores ipsa, consectetur dolore, dolorem itaque quibusdam beatae repellendus 
-            officia perferendis porro quaerat corrupti tempora voluptates cum nostrum.
-        </p>
+    <!-- Final Slider -->
+
+    <!-- About Me -->
+    <div class="container about flex flex-col justify-center max-w-full p-5 m-3" id="about">
+        <h1 class="font-medium text-zinc-600 text-center text-4xl">Sobre mim</h1>
+        <div class="container min-w-fit">
+            <h2 class="font-bold mt-2 text-4xl text-zinc-800 text-center">Olá mundo!</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus dicta ea 
+                assumenda maiores ipsa, consectetur dolore, dolorem itaque quibusdam beatae repellendus 
+                officia perferendis porro quaerat corrupti tempora voluptates cum nostrum.
+            </p>
+        </div>
         <div class="social">
             <img src="" alt="instagram">
             <img src="" alt="">
@@ -43,7 +55,9 @@
             <img src="" alt="">
         </div>
     </div>
+    <!-- Final About Me -->
 
+    <!-- Works -->
     <div class="content" id="content">
         <div class="card">
             <div class="title">
@@ -55,6 +69,7 @@
         </div>
         <button>veja mais</button>
     </div>
+    <!-- final Works -->
 
     <div class="contact" id="contact">
         <h1>Fala comigo!</h1>
